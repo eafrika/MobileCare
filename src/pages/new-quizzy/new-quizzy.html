@@ -1,0 +1,85 @@
+<!--
+  Generated template for the NewQuizzyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header> 
+  <ion-navbar>
+    <ion-title> <ion-icon ios="ios-create" md="ios-create"></ion-icon> New Quizzy</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar >
+      <ion-grid>
+          <ion-row>
+            <ion-col col-lg-4 col-xl-3>
+      
+            </ion-col>
+            <ion-col col-lg-4 col-xl-3 text-center>
+                <ion-card class="logoIO"> 
+                    <img src="../../assets/icon/request-icon-250x250.png" class="slide-image"/>
+                </ion-card>
+            </ion-col>
+            <ion-col col-lg-4 col-xl-3>
+      
+            </ion-col>   
+          </ion-row>
+        </ion-grid> 
+  </ion-toolbar>
+
+</ion-header>
+    
+    
+<ion-content>
+
+  <ion-list class="mainheader" inset>
+
+    <ion-item>
+      <ion-label style="color:#eb930f;" stacked>Subject</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="color:#eb930f;" stacked>Problematic</ion-label>
+      <ion-textarea rows="4"></ion-textarea>
+    </ion-item>  
+
+  </ion-list> 
+
+  <ion-list inset>
+    
+        <ion-grid class="ion-gridschedule">
+            <ion-row> 
+                <ion-col>
+                  <ion-icon ios="md-link" md="md-link"></ion-icon> 
+                </ion-col>
+                <ion-col>
+                    <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+                  </ion-col>
+              </ion-row>
+        </ion-grid>   
+       
+        <ion-item>
+          <ion-label color="darkenblue">Doctor</ion-label>
+          <ion-select  submitText="Okay" cancelText="Cancel">
+            <ion-option value="dos" aria-selected="">Any</ion-option>
+            <ion-option value="lunix">Linux</ion-option>
+            <ion-option value="mac7">Mac OS 7</ion-option>
+            <ion-option value="mac8">Mac OS 8</ion-option>
+            <ion-option value="win3.1">Windows 3.1</ion-option>
+            <ion-option value="win95">Windows 95</ion-option>
+            <ion-option value="win98">Windows 98</ion-option>
+          </ion-select>
+        </ion-item>
+            
+      </ion-list>
+
+      <ion-list inset>
+        <ion-item class="submitbtn">   
+            <button ion-button block padding>
+                Send now &nbsp;  &nbsp; <ion-icon ios="ios-send" md="md-send"></ion-icon>  
+            </button> 
+        </ion-item>
+      </ion-list>
+
+</ion-content>

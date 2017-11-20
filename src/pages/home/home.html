@@ -1,0 +1,61 @@
+<ion-content scroll="false" overflow-scroll="true">
+
+    <ion-slides pager class="ion-slides">
+        <!-- http://localhost:53235/ImagesDatas/HomeSlideImage/slide.SlideNews_Id--> 
+        <ion-slide *ngFor="let slide of AllNews"> 
+          <!--<img [src]="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" class="slide-image"/> -->
+          <h2 class="slide-title" [innerHTML]="slide.SlideNews_Title"></h2>
+          <p [innerHTML]="slide.SlideNews_Description.substring(0,50)"></p>
+        </ion-slide> 
+
+        <ion-slide>  
+          <img src="http://localhost:53235/ImagesDatas/HomeSlideImage/98753" class="slide-image"/>
+          <h2 class="slide-title">Ready to Play?</h2>
+          <button ion-button large clear icon-end color="primary">
+            Continue
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-slide>
+
+    </ion-slides>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <div>                
+                <ion-card>
+                    <ion-icon ios="ios-list-box" md="md-list-box"></ion-icon>
+                    <div class="card-subtitle">Our services</div>
+               </ion-card>
+            </div>
+        </ion-col>
+        <ion-col>
+          <div>
+              <ion-card> 
+                  <ion-icon ios="ios-people" md="md-people"></ion-icon>
+                  <div class="card-subtitle"> Our doctors </div>
+             </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row> 
+        <ion-col>
+            <div>
+                <ion-card>
+                    <ion-icon ios="ios-map" md="md-map"></ion-icon>
+                    <div class="card-subtitle">Locations</div>
+               </ion-card>
+            </div>
+        </ion-col>
+        <ion-col>
+            <div>
+                <ion-card>
+                    <ion-icon ios="ios-call" md="md-call"></ion-icon>
+                    <div class="card-subtitle">Call center</div>
+               </ion-card>
+            </div>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+</ion-content>
